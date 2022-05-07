@@ -1,0 +1,55 @@
+{
+  "name": "yumemi-frontend-test",
+  "description": "[株式会社ゆめみのフロントエンドコーディング試験](https://notion.yumemi.co.jp/0e9ef27b55704d7882aab55cc86c999d)を試してみるリポジトリ",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "jest",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.27.2",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@testing-library/vue": "^6.4.2",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^16.11.27",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "eslint-plugin-vue-scoped-css": "^2.2.0",
+    "jest": "^28.1.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^28.0.1",
+    "ts-node": "^10.7.0",
+    "typescript": "~4.6.3",
+    "vite": "^2.9.5",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-tsc": "^0.34.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-develo/yumemi-frontend-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-develo/yumemi-frontend-test/issues"
+  },
+  "homepage": "https://github.com/t-develo/yumemi-frontend-test#readme"
+}

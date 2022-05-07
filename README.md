@@ -1,26 +1,46 @@
 # yumemi-frontend-test
-[株式会社ゆめみのフロントエンドコーディング試験](https://notion.yumemi.co.jp/0e9ef27b55704d7882aab55cc86c999d)を試してみるリポジトリ
 
-## 課題
+This template should help get you started developing with Vue 3 in Vite.
 
-**都道府県別の総人口推移グラフを表示するSPAを構築する**
+## Recommended IDE Setup
 
-## 内容
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
 
-- [ ] RESAS(地域経済分析システム)APIの「都道府県一覧」APIから取得する
-- [ ] APIレスポンスから都道府県一覧のチェックボックスを動的に生成する
-- [ ] 都道府県にチェックを入れると、RESAS APIから選択された都道府県の「人口構成」を取得する
-- [ ] 人口構成APIレスポンスから、X軸：年、Y軸：人口数の折れ線グラフを動的に生成して表示する
+## Type Support for `.vue` Imports in TS
 
-## 制約
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-- React/Vue.js/Angularのいずれかを用いてSPAを構築する
-- グラフはHighchartsやRechart,jsなどのサードパーティ製グラフライブラリを用いて描画する
-- Chrome最新版で動作する
-- PC/スマートフォン表示に対応する(レスポンシブデザイン)
-- ESLint,Prettierを利用する
-- styleは自分で設定して、CSS・UIフレームワークは原則利用しない
-- リードエンジニア・テックリード応募の場合は下記制約も追加
-  - TypeScriptで記述する
-  - テストコードを作成する（ツールは任意）
-  - テスト実行時にエラーが発生しないこと
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
